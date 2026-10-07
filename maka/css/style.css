@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif; /* O la fuente que prefieras */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* O la fuente que prefieras para títulos */
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+/* Navbar */
+.navbar-brand img {
+    border-radius: 50%; /* Para que el logo se vea como un círculo en la barra */
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #555 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(0,0,0,.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/hero-background.jpg') no-repeat center center/cover; /* Asegúrate de tener una imagen para el fondo */
+    min-height: 100vh; /* O la altura que desees para que ocupe toda la pantalla inicial */
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-logo {
+    width: 150px; /* Ajusta el tamaño de tu logo en el hero */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+/* Secciones Generales */
+section {
+    padding: 80px 0; /* Espaciado uniforme para las secciones */
+}
+
+section:nth-of-type(even) {
+    background-color: #f8f9fa; /* Fondo ligero para secciones alternas */
+}
+
+/* Sección Nosotros */
+#nosotros img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Galería */
+#galeria .card-img-top {
+    height: 300px; /* Altura fija para las imágenes de la galería */
+    object-fit: cover;
+}
+
+/* Botones */
+.btn-outline-dark {
+    border-color: #333;
+    color: #333;
+}
+.btn-outline-dark:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #222 !important;
+    color: #bbb !important;
+    font-size: 0.9rem;
+}
+
+/* Media Queries para Responsive Design (Bootstrap ya hace mucho, pero puedes añadir extras) */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 70vh;
+        padding-top: 100px; /* Ajuste para el navbar fijo */
+    }
+    .hero-logo {
+        width: 120px;
+        height: 120px;
+    }
+}
